@@ -94,7 +94,7 @@ fig = go.Figure()
 
 for i in range(len(limits)):
     lim = limits[i]
-    df_sub = df[lim[0]:lim[1]]
+    df_sub = df[lim[0]:lim[1]+1]
     fig.add_trace(go.Scattergeo(
         locationmode = 'USA-states',
         lon = df_sub['lon'],
